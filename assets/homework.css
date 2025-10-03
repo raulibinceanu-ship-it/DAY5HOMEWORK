@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.bg-dark {
+  background-color: #232f3e;
+  color: #fff;
+}
+.bg-yellow {
+  background-color: #f56600;
+  color: #fff;
+}
+.logo {
+  filter: brightness(0) invert(1); /* rende bianco il logo nero */
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #232f3e;
+  color: #fff;
+}
+header img.logo {
+  height: 30px;
+  margin-right: 2rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+/*BARRA PROMO*/
+.promo-bar {
+  background-color: #f56600;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/*HERO VERDE*/
+.hero-green {
+  background-color: #00715d;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero-green h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.hero-green p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+}
+/*Griglia 4 card*/
+gift-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+}
+.gift-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.gift-card:hover {
+  transform: scale(1.02);
+}
+.gift-card img {
+  width: 100%;
+  display: block;
+}
+/*Banner grandi*/
+.banner {
+  margin: 2rem 0;
+  text-align: center;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.banner-text a {
+  color: #007185;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*Footer*/
+footer {
+  background-color: #232f3e;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+footer img {
+  margin-top: 1rem;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
