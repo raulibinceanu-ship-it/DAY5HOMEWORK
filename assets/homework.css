@@ -1,77 +1,70 @@
-body {
+/* Reset base */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-.text-center {
-  text-align: center;
-}
-.py-1 {
-  padding: 1rem 0;
-}
-.bg-dark {
-  background-color: #232f3e;
-  color: #fff;
-}
-.bg-yellow {
-  background-color: #f56600;
-  color: #fff;
-}
-.logo {
-  filter: brightness(0) invert(1); /* rende bianco il logo nero */
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
+  background-color: #131921;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 2rem;
-  background-color: #232f3e;
-  color: #fff;
 }
-header img.logo {
-  height: 30px;
-  margin-right: 2rem;
+header .logo {
+  height: 40px;
 }
 .nav-links {
   display: flex;
-  gap: 1rem;
-  font-size: 0.9rem;
 }
 .nav-links a {
-  color: #fff;
+  color: white;
+  margin-left: 1rem;
   text-decoration: none;
+  font-size: 0.9rem;
 }
-/*BARRA PROMO*/
-.promo-bar {
-  background-color: #f56600;
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem;
-  font-weight: bold;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-/*HERO VERDE*/
-.hero-green {
-  background-color: #00715d;
+/* Promo bar */
+.promo-bar {
+  background-color: #37475a;
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0.6rem;
+  font-size: 0.9rem;
 }
-.hero-green h2 {
-  margin: 0;
+
+/* Hero verde */
+.hero-green {
+  position: relative;
+  text-align: center;
+}
+.hero-green img {
+  width: 100%;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.hero-text h2 {
   font-size: 2rem;
+  margin-bottom: 0.3rem;
 }
-.hero-green p {
-  margin: 0.5rem 0 0;
-  font-size: 1.1rem;
+.hero-text p {
+  font-size: 1.2rem;
 }
-/*Griglia 4 card*/
-gift-grid {
+
+/* Griglia card */
+.gift-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -93,25 +86,39 @@ gift-grid {
   width: 100%;
   display: block;
 }
-/*Banner grandi*/
+
+/* Banner grandi */
 .banner {
   margin: 2rem 0;
   text-align: center;
+  position: relative;
 }
 .banner img {
   width: 100%;
   display: block;
 }
 .banner-text {
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 .banner-text a {
-  color: #007185;
-  font-weight: bold;
+  color: #ff9900;
   text-decoration: none;
+  margin-left: 0.5rem;
 }
-/*Footer*/
+.banner-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   background-color: #232f3e;
   color: #fff;
@@ -123,7 +130,7 @@ footer a {
   text-decoration: none;
   font-size: 0.9rem;
 }
-footer img {
+footer .logo {
   margin-top: 1rem;
   height: 30px;
   filter: brightness(0) invert(1);
